@@ -1,0 +1,8 @@
+node_modules
+.next
+.claude
+out
+build
+dist
+public
+*.md

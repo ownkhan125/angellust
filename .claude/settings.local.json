@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone *)",
+      "Bash(mkdir -p .claude/skills)",
+      "Bash(cp -r /tmp/playwright-skill-temp/skills/playwright-skill .claude/skills/)",
+      "Bash(npm run *)",
+      "Bash(npx --yes create-next-app@latest . --js --tailwind --app --eslint --no-src-dir --import-alias \"@/*\" --use-npm --yes)",
+      "Read(//c/Users/General/Documents/GitHub/**)",
+      "Bash(npx --yes create-next-app@latest angellust-temp --js --tailwind --app --eslint --no-src-dir --import-alias \"@/*\" --use-npm --yes)",
+      "Bash(npm install *)",
+      "WebFetch(domain:www.drkahlforcongress.com)",
+      "Bash(PORT=3030 npm run dev)",
+      "Bash(echo \"Started PID: $!\")",
+      "Bash(node run.js /tmp/playwright-test-angellust.js)",
+      "Bash(grep -A 50 \"^#### \\\\`remotePatterns\\\\`\" \"C:/Users/General/Documents/GitHub/AngelLust/node_modules/next/dist/docs/01-app/03-api-reference/02-components/image.md\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3030/)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3030/)",
+      "Bash(curl -sf -o /dev/null -w \"code: %{http_code}\\\\n\" http://localhost:3030/)",
+      "Bash(curl *)",
+      "Bash(node run.js /tmp/playwright-test-angellust-v2.js)",
+      "Bash(node run.js /tmp/playwright-audit.js)",
+      "Bash(node run.js /tmp/playwright-audit-v2.js)",
+      "Bash(node run.js /tmp/playwright-final.js)",
+      "Bash(node run.js /tmp/playwright-stability.js)",
+      "Bash(taskkill /PID 28528 /F)",
+      "Bash(cmd.exe //C \"taskkill /PID 28528 /F\")",
+      "Bash(xargs -0 sed -i -e 's|@/components/ui/Container|@/components/ui/container|g' -e 's|@/components/ui/Counter|@/components/ui/counter|g' -e 's|@/components/ui/MagneticButton|@/components/ui/magnetic-button|g' -e 's|@/components/ui/Marquee|@/components/ui/marquee|g' -e 's|@/components/ui/Modal|@/components/ui/modal|g' -e 's|@/components/ui/PageHero|@/components/ui/page-hero|g' -e 's|@/components/ui/ScrollProgress|@/components/ui/scroll-progress|g' -e 's|@/components/ui/SectionReveal|@/components/ui/section-reveal|g' -e 's|@/components/ui/SplitText|@/components/ui/split-text|g' -e 's|@/components/ui/TestimonialDeck|@/components/ui/testimonial-deck|g' -e 's|@/components/ui/Typewriter|@/components/ui/typewriter|g' -e 's|@/sections/About|@/components/sections/about|g' -e 's|@/sections/Endorsements|@/components/sections/endorsements|g' -e 's|@/sections/Events|@/components/sections/events|g' -e 's|@/sections/Footer|@/components/sections/footer|g' -e 's|@/sections/Hero|@/components/sections/hero|g' -e 's|@/sections/Join|@/components/sections/join|g' -e 's|@/sections/Navbar|@/components/sections/navbar|g' -e 's|@/sections/Priorities|@/components/sections/priorities|g' -e 's|@/sections/pages/AboutPage|@/components/pages/about-page|g' -e 's|@/sections/pages/ContactPage|@/components/pages/contact-page|g' -e 's|@/sections/pages/DonatePage|@/components/pages/donate-page|g' -e 's|@/sections/pages/EndorsementsPage|@/components/pages/endorsements-page|g' -e 's|@/sections/pages/EventDetailPage|@/components/pages/event-detail-page|g' -e 's|@/sections/pages/EventsListPage|@/components/pages/events-list-page|g' -e 's|@/sections/pages/PrioritiesPage|@/components/pages/priorities-page|g' -e 's|@/sections/pages/VolunteerPage|@/components/pages/volunteer-page|g' -e 's|@/utils/cn|@/lib/cn|g' -e 's|@/utils/data|@/lib/data|g' -e 's|@/utils/images|@/lib/images|g')",
+      "Bash(npx prettier *)",
+      "Bash(xargs -0 sed -i -e 's|import { Container } from '\\\\''@/components/ui/container'\\\\''|import Container from '\\\\''@/components/ui/container'\\\\''|g' -e 's|import { Marquee } from '\\\\''@/components/ui/marquee'\\\\''|import Marquee from '\\\\''@/components/ui/marquee'\\\\''|g' -e 's|import { Modal } from '\\\\''@/components/ui/modal'\\\\''|import Modal from '\\\\''@/components/ui/modal'\\\\''|g' -e 's|import { Typewriter } from '\\\\''@/components/ui/typewriter'\\\\''|import Typewriter from '\\\\''@/components/ui/typewriter'\\\\''|g' -e 's|import { TestimonialDeck } from '\\\\''@/components/ui/testimonial-deck'\\\\''|import TestimonialDeck from '\\\\''@/components/ui/testimonial-deck'\\\\''|g' -e 's|import { SplitText } from '\\\\''@/components/ui/split-text'\\\\''|import SplitText from '\\\\''@/components/ui/split-text'\\\\''|g' -e 's|import { SectionReveal } from '\\\\''@/components/ui/section-reveal'\\\\''|import SectionReveal from '\\\\''@/components/ui/section-reveal'\\\\''|g' -e 's|import { PageHero } from '\\\\''@/components/ui/page-hero'\\\\''|import PageHero from '\\\\''@/components/ui/page-hero'\\\\''|g' -e 's|import { MagneticButton } from '\\\\''@/components/ui/magnetic-button'\\\\''|import MagneticButton from '\\\\''@/components/ui/magnetic-button'\\\\''|g' -e 's|import { ScrollProgress } from '\\\\''@/components/ui/scroll-progress'\\\\''|import ScrollProgress from '\\\\''@/components/ui/scroll-progress'\\\\''|g')",
+      "Bash(xargs -0 sed -i -e 's|import { Hero } from|import Hero from|g' -e 's|import { About } from|import About from|g' -e 's|import { Priorities } from|import Priorities from|g' -e 's|import { Endorsements } from|import Endorsements from|g' -e 's|import { Events } from|import Events from|g' -e 's|import { Join } from|import Join from|g' -e 's|import { Navbar } from|import Navbar from|g' -e 's|import { Footer } from|import Footer from|g' -e 's|import { AboutPage } from|import AboutPage from|g' -e 's|import { ContactPage } from|import ContactPage from|g' -e 's|import { DonatePage } from|import DonatePage from|g' -e 's|import { EndorsementsPage } from|import EndorsementsPage from|g' -e 's|import { EventDetailPage } from|import EventDetailPage from|g' -e 's|import { EventsListPage } from|import EventsListPage from|g' -e 's|import { PrioritiesPage } from|import PrioritiesPage from|g' -e 's|import { VolunteerPage } from|import VolunteerPage from|g')",
+      "Bash(npx --yes shadcn@latest init --yes --defaults --base-color zinc --css-variables)",
+      "Bash(npx --yes shadcn@latest init --help)",
+      "Bash(npx --yes shadcn@latest init --yes --defaults --silent)",
+      "Bash(npm ls *)",
+      "Bash(xargs -0 sed -i \"s|@/lib/cn|@/lib/utils|g\")",
+      "Bash(node run.js /tmp/playwright-codestyle-verify.js)",
+      "Bash(node run.js ' *)"
+    ]
+  }
+}
