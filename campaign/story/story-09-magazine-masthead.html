@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AngelLust · Story 09 · Magazine Masthead</title>
+<style>
+  :root{
+    --ink:#0b0c10; --surface:#14161e; --line:#2a2d38; --line-strong:#3a3e4d;
+    --cream:#f2eee5; --cream-dim:#cfcabe; --muted:#8b8e9a;
+    --gold:#e8b547; --clay:#c84630; --teal:#1f4e5f;
+    --serif:"EB Garamond","Times New Roman",Georgia,serif;
+    --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono","Geist Mono",ui-monospace,monospace;
+  }
+  html,body{margin:0;background:#16171c;display:grid;place-items:center;font-family:var(--sans)}
+  .canvas{width:1080px;height:1920px;position:relative;overflow:hidden;color:var(--cream);
+    background:
+      radial-gradient(70% 50% at 50% 0%, rgba(232,181,71,.20), transparent 60%),
+      radial-gradient(80% 70% at 50% 100%, rgba(11,12,16,.95), transparent 60%),
+      linear-gradient(180deg,#0a0c11,#040508);
+  }
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .barcode{position:absolute;left:64px;top:96px;display:flex;align-items:center;gap:14px}
+  .barcode .bars{display:flex;gap:2px}
+  .barcode .bars span{display:block;width:2px;background:var(--cream-dim)}
+  .barcode .bars span:nth-child(1){height:34px}.barcode .bars span:nth-child(2){height:22px;width:3px}
+  .barcode .bars span:nth-child(3){height:34px;width:1px}.barcode .bars span:nth-child(4){height:28px}
+  .barcode .bars span:nth-child(5){height:34px;width:3px}.barcode .bars span:nth-child(6){height:18px}
+  .barcode .bars span:nth-child(7){height:34px;width:2px}.barcode .bars span:nth-child(8){height:30px;width:1px}
+  .barcode .bars span:nth-child(9){height:34px;width:3px}.barcode .bars span:nth-child(10){height:24px}
+  .barcode .iso{font-family:var(--mono);font-size:11px;letter-spacing:.36em;color:var(--muted);text-transform:uppercase}
+  .price{position:absolute;right:64px;top:96px;font-family:var(--mono);font-size:11px;letter-spacing:.34em;color:var(--muted);text-transform:uppercase;text-align:right}
+  .price strong{display:block;font-family:var(--serif);font-size:24px;color:var(--cream);letter-spacing:0;margin-top:4px}
+  .masthead{position:absolute;left:64px;right:64px;top:220px;text-align:center}
+  .masthead .micro{font-family:var(--mono);font-size:13px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .masthead .ttl{font-family:var(--serif);font-weight:500;font-size:200px;line-height:.86;letter-spacing:-.045em;color:var(--cream);font-style:italic}
+  .masthead .rule{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:18px;font-family:var(--mono);font-size:12px;letter-spacing:.4em;color:var(--cream-dim);text-transform:uppercase}
+  .masthead .rule span{height:1px;width:120px;background:var(--cream-dim);opacity:.6}
+  .cover-img{position:absolute;left:120px;right:120px;top:580px;height:900px;border:1px dashed var(--line-strong);background:
+    radial-gradient(50% 40% at 50% 30%, rgba(31,78,95,.30), transparent 60%),
+    linear-gradient(170deg,#16181f,#070809);
+    border-radius:6px;overflow:hidden;display:grid;place-items:center;font-family:var(--mono);font-size:13px;letter-spacing:.28em;color:var(--cream-dim);text-transform:uppercase;box-shadow:0 60px 100px -30px rgba(0,0,0,.7)}
+  .cover-img::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 40% at 50% 20%, rgba(232,181,71,.16), transparent 60%)}
+  .cover-img span{position:relative;z-index:2;padding:14px 22px;border:1px solid var(--line-strong);background:rgba(11,12,16,.5);border-radius:2px}
+  .strap{position:absolute;left:64px;right:64px;top:1520px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  .strap .cell{padding:18px 18px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.005));backdrop-filter:blur(4px)}
+  .strap .k{font-family:var(--mono);font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+  .strap .v{font-family:var(--serif);font-size:24px;color:var(--cream);line-height:1.15;margin-top:6px;font-style:italic}
+  .foot{position:absolute;left:64px;right:64px;bottom:96px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:22px;font-family:var(--mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+  .foot .num{font-family:var(--serif);font-style:italic;font-size:42px;color:var(--gold);line-height:1;letter-spacing:0}
+</style>
+</head>
+<body>
+<div class="canvas grain">
+  <div class="barcode">
+    <div class="bars"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <span class="iso">ISSN · 0000 · 0000</span>
+  </div>
+  <div class="price">Vol. ix — MMXXVI<strong>$00.00</strong></div>
+  <div class="masthead">
+    <div class="micro">— A Quarterly Folio · IX —</div>
+    <div class="ttl">AngelLust</div>
+    <div class="rule"><span></span>Lorem · Ipsum · Dolor<span></span></div>
+  </div>
+  <div class="cover-img"><span>[ Hero Placeholder Image ]</span></div>
+  <div class="strap">
+    <div class="cell"><div class="k">— 01 —</div><div class="v">Lorem ipsum dolor sit</div></div>
+    <div class="cell"><div class="k">— 02 —</div><div class="v">Consectetur adipiscing</div></div>
+    <div class="cell"><div class="k">— 03 —</div><div class="v">Eiusmod tempor ipsum</div></div>
+  </div>
+  <div class="foot">
+    <span>Issue · IX · ix / x</span>
+    <span class="num">№ 09</span>
+  </div>
+</div>
+</body>
+</html>

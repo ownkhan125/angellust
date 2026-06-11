@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AngelLust · Feed 06 · Event Ticket</title>
+<style>
+  :root{
+    --ink:#0b0c10; --ink-2:#101218; --surface:#14161e; --line:#2a2d38; --line-strong:#3a3e4d;
+    --cream:#f2eee5; --cream-dim:#cfcabe; --muted:#8b8e9a;
+    --gold:#e8b547; --clay:#c84630; --clay-deep:#8d2c1c; --teal:#1f4e5f; --teal-soft:#3a7f93;
+    --serif:"EB Garamond","Times New Roman",Georgia,serif;
+    --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono","Geist Mono",ui-monospace,monospace;
+  }
+  html,body{margin:0;background:#16171c;display:grid;place-items:center;font-family:var(--sans)}
+  .canvas{width:1080px;height:1080px;position:relative;overflow:hidden;color:var(--cream);
+    background:
+      radial-gradient(70% 60% at 80% 20%, rgba(200,70,48,.30), transparent 60%),
+      radial-gradient(70% 60% at 10% 90%, rgba(31,78,95,.30), transparent 60%),
+      var(--ink);
+  }
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.6' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .top{position:absolute;left:64px;right:64px;top:60px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+  .brand{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--cream);letter-spacing:0}
+  .ticket{position:absolute;left:64px;right:64px;top:140px;bottom:140px;display:grid;grid-template-columns:1.55fr 1fr;background:linear-gradient(160deg,#14161e,#0b0c10);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 50px 100px -40px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.04)}
+  .left{position:relative;padding:54px 54px;border-right:2px dashed var(--line-strong)}
+  .left::after, .left::before{content:"";position:absolute;width:44px;height:44px;border-radius:999px;background:#16171c;border:1px solid var(--line);right:-23px}
+  .left::before{top:-22px}
+  .left::after{bottom:-22px}
+  .tag{display:inline-block;padding:8px 14px;border:1px solid var(--gold);color:var(--gold);font-family:var(--mono);font-size:11px;letter-spacing:.32em;text-transform:uppercase;border-radius:999px;margin-bottom:34px}
+  h1{font-family:var(--serif);font-weight:500;font-size:96px;line-height:.95;letter-spacing:-.02em;margin:0;color:var(--cream)}
+  h1 em{font-style:italic;color:var(--gold)}
+  .row{margin-top:46px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;border-top:1px solid var(--line);padding-top:30px}
+  .row .k{font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+  .row .v{font-family:var(--serif);font-size:30px;margin-top:6px;color:var(--cream)}
+  .right{position:relative;padding:54px 46px;background:linear-gradient(180deg, rgba(200,70,48,.22), rgba(141,44,28,.10) 60%, transparent);display:flex;flex-direction:column;justify-content:space-between}
+  .date{font-family:var(--serif);font-weight:500;font-size:60px;line-height:1;color:var(--cream)}
+  .month{font-family:var(--mono);letter-spacing:.4em;text-transform:uppercase;color:var(--gold);font-size:14px;margin-top:6px;display:block}
+  .big-day{font-family:var(--serif);font-weight:500;font-size:240px;line-height:.85;color:var(--cream);letter-spacing:-.04em;margin-top:24px}
+  .ph{margin-top:auto;padding:18px;border:1px dashed var(--line-strong);border-radius:6px;display:grid;place-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.28em;color:var(--muted);text-transform:uppercase;background:rgba(11,12,16,.4)}
+  .footer{position:absolute;left:64px;right:64px;bottom:54px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="canvas grain">
+  <div class="top">
+    <span>Convocatio · 06</span>
+    <span class="brand">AngelLust</span>
+    <span>Adm · 001</span>
+  </div>
+  <div class="ticket">
+    <div class="left">
+      <span class="tag">● Lorem Ipsum Live</span>
+      <h1>Lorem ipsum<br/><em>dolor</em> sit amet.</h1>
+      <div class="row">
+        <div><div class="k">Sit Amet</div><div class="v">Lorem Hall</div></div>
+        <div><div class="k">Tempus</div><div class="v">VII : 30</div></div>
+        <div><div class="k">Adipisci</div><div class="v">$00</div></div>
+      </div>
+    </div>
+    <div class="right">
+      <div>
+        <span class="month">— Mensis · MMXXVI —</span>
+        <span class="big-day">12</span>
+      </div>
+      <div class="ph">[ Placeholder Image ]</div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>RSVP · Lorem.Ipsum / Dolor</span>
+    <span>angellust · 2026</span>
+  </div>
+</div>
+</body>
+</html>

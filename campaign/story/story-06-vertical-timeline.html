@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AngelLust · Story 06 · Vertical Timeline</title>
+<style>
+  :root{
+    --ink:#0b0c10; --surface:#14161e; --surface-2:#1a1d27; --line:#2a2d38; --line-strong:#3a3e4d;
+    --cream:#f2eee5; --cream-dim:#cfcabe; --muted:#8b8e9a;
+    --gold:#e8b547; --clay:#c84630; --teal:#1f4e5f; --teal-soft:#3a7f93;
+    --serif:"EB Garamond","Times New Roman",Georgia,serif;
+    --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono","Geist Mono",ui-monospace,monospace;
+  }
+  html,body{margin:0;background:#16171c;display:grid;place-items:center;font-family:var(--sans)}
+  .canvas{width:1080px;height:1920px;position:relative;overflow:hidden;color:var(--cream);
+    background:
+      radial-gradient(900px 800px at 20% 10%, rgba(58,127,147,.18), transparent 60%),
+      radial-gradient(900px 800px at 90% 90%, rgba(232,181,71,.12), transparent 60%),
+      var(--ink);
+  }
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.6' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .top{position:absolute;left:64px;right:64px;top:96px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:13px;letter-spacing:.36em;text-transform:uppercase;color:var(--muted)}
+  .brand{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--cream);letter-spacing:0}
+  .head{position:absolute;left:64px;right:64px;top:170px}
+  .eyebrow{font-family:var(--mono);font-size:14px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+  .eyebrow .l{height:1px;width:50px;background:var(--gold)}
+  h1{font-family:var(--serif);font-weight:500;font-size:120px;line-height:.94;letter-spacing:-.02em;margin:0;color:var(--cream)}
+  h1 em{font-style:italic;color:var(--gold)}
+  .rail{position:absolute;left:148px;top:560px;width:1px;background:linear-gradient(180deg, var(--gold) 0%, var(--line-strong) 30%, var(--line-strong) 100%);height:1100px}
+  .events{position:absolute;left:64px;right:64px;top:540px;display:flex;flex-direction:column;gap:60px}
+  .ev{display:grid;grid-template-columns:120px 1fr auto;align-items:center;gap:24px;position:relative}
+  .ev .dot{justify-self:end;width:18px;height:18px;border-radius:999px;background:var(--ink);border:2px solid var(--gold);box-shadow:0 0 0 4px rgba(232,181,71,.18)}
+  .ev:nth-child(n+2) .dot{border-color:var(--cream-dim);box-shadow:0 0 0 3px rgba(207,202,190,.10)}
+  .ev .date{position:absolute;left:0;display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+  .ev .date .m{font-family:var(--mono);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+  .ev .date .d{font-family:var(--serif);font-size:42px;line-height:1;color:var(--cream)}
+  .ev .card{margin-left:92px;padding:20px 24px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.005));backdrop-filter:blur(4px);min-height:90px}
+  .ev .ttl{font-family:var(--serif);font-size:30px;color:var(--cream);line-height:1.15}
+  .ev .sub{font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--cream-dim);margin-top:8px}
+  .ev .pill{justify-self:end;align-self:start;padding:6px 12px;border:1px solid var(--line-strong);border-radius:999px;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+  .foot{position:absolute;left:64px;right:64px;bottom:96px;border-top:1px solid var(--line);padding-top:22px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="canvas grain">
+  <div class="top">
+    <span>Calendarium · 06</span>
+    <span class="brand">AngelLust</span>
+  </div>
+  <div class="head">
+    <span class="eyebrow"><span class="l"></span>Lorem ipsum dolor sit</span>
+    <h1>Itinerarium<br/><em>MMXXVI.</em></h1>
+  </div>
+  <div class="rail"></div>
+  <div class="events">
+    <div class="ev">
+      <div class="date"><span class="m">— Ian —</span><span class="d">12</span></div>
+      <span class="dot"></span>
+      <div class="card"><div class="ttl">Lorem ipsum dolor sit</div><div class="sub">Consectetur · Lorem Hall · VII : 30</div></div>
+      <span class="pill">Open</span>
+    </div>
+    <div class="ev">
+      <div class="date"><span class="m">— Feb —</span><span class="d">03</span></div>
+      <span class="dot"></span>
+      <div class="card"><div class="ttl">Adipiscing elit sed do</div><div class="sub">Eiusmod · Tempor Hall · VI : 00</div></div>
+      <span class="pill">RSVP</span>
+    </div>
+    <div class="ev">
+      <div class="date"><span class="m">— Mar —</span><span class="d">22</span></div>
+      <span class="dot"></span>
+      <div class="card"><div class="ttl">Labore et dolore magna</div><div class="sub">Aliqua · Veniam Hall · V : 30</div></div>
+      <span class="pill">Soon</span>
+    </div>
+    <div class="ev">
+      <div class="date"><span class="m">— Apr —</span><span class="d">09</span></div>
+      <span class="dot"></span>
+      <div class="card"><div class="ttl">Quis nostrud exercitation</div><div class="sub">Ullamco · Laboris · IV : 45</div></div>
+      <span class="pill">Soon</span>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Vol. I · iv events</span>
+    <span>angellust / kalend</span>
+  </div>
+</div>
+</body>
+</html>

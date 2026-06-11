@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AngelLust · Feed 01 · Editorial Portrait</title>
+<style>
+  :root{
+    --ink:#0b0c10; --ink-2:#101218; --surface:#14161e;
+    --line:#2a2d38; --line-strong:#3a3e4d;
+    --cream:#f2eee5; --cream-dim:#cfcabe; --muted:#8b8e9a;
+    --gold:#e8b547; --gold-soft:#f3cf7a; --clay:#c84630; --teal:#1f4e5f;
+    --serif: "EB Garamond","Times New Roman", Georgia, serif;
+    --sans: "Inter","Helvetica Neue", Arial, sans-serif;
+    --mono: "JetBrains Mono","Geist Mono", ui-monospace, monospace;
+  }
+  html,body{margin:0;background:#16171c;display:grid;place-items:center;font-family:var(--sans)}
+  .canvas{
+    width:1080px;height:1080px;position:relative;overflow:hidden;
+    background:
+      radial-gradient(120% 85% at 50% 55%, transparent 0%, transparent 45%, rgba(11,12,16,.65) 100%),
+      radial-gradient(900px 500px at 100% 10%, rgba(31,78,95,.16), transparent 55%),
+      radial-gradient(1200px 600px at 15% -10%, rgba(232,181,71,.10), transparent 60%),
+      var(--ink);
+    color:var(--cream);
+  }
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .grid-mask{position:absolute;inset:0;
+    background-image:linear-gradient(to right,#fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px);
+    background-size:80px 80px;opacity:.05;
+    -webkit-mask-image:radial-gradient(ellipse at center, black 30%, transparent 75%);
+            mask-image:radial-gradient(ellipse at center, black 30%, transparent 75%);}
+  .pad{position:absolute;inset:64px}
+  .meta{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+  .dot{width:8px;height:8px;border-radius:999px;background:var(--gold);box-shadow:0 0 18px var(--gold)}
+  .rule{flex:1;height:1px;background:var(--line-strong);max-width:180px}
+  .grid{position:absolute;left:64px;right:64px;top:160px;bottom:120px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px}
+  h1{font-family:var(--serif);font-weight:500;font-size:172px;line-height:.92;letter-spacing:-.025em;margin:0;color:var(--cream)}
+  h1 em{font-style:italic;color:var(--gold);display:block;margin-top:6px}
+  .lede{margin-top:48px;max-width:460px;color:var(--cream-dim);font-size:18px;line-height:1.55;border-left:1px solid var(--line-strong);padding-left:22px}
+  .portrait{position:relative;border:1px solid var(--line-strong);border-radius:4px;overflow:hidden;background:linear-gradient(160deg,#1a1d27,#0b0c10);min-height:100%}
+  .portrait::before{content:"";position:absolute;inset:0;background:
+     radial-gradient(60% 50% at 30% 25%, rgba(232,181,71,.18), transparent 70%),
+     radial-gradient(80% 60% at 80% 90%, rgba(200,70,48,.14), transparent 70%);}
+  .ph{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--mono);font-size:13px;letter-spacing:.28em;color:var(--muted);text-transform:uppercase}
+  .ph span{padding:14px 18px;border:1px dashed var(--line-strong);border-radius:2px;background:rgba(11,12,16,.4)}
+  .corner{position:absolute;width:38px;height:38px;border:1px solid var(--gold);opacity:.7}
+  .c-tl{top:14px;left:14px;border-right:0;border-bottom:0}
+  .c-tr{top:14px;right:14px;border-left:0;border-bottom:0}
+  .c-bl{bottom:14px;left:14px;border-right:0;border-top:0}
+  .c-br{bottom:14px;right:14px;border-left:0;border-top:0}
+  .footer{position:absolute;left:64px;right:64px;bottom:48px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+  .logo{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--cream);letter-spacing:0}
+  .badge{padding:8px 14px;border:1px solid var(--line-strong);border-radius:999px;color:var(--cream-dim)}
+</style>
+</head>
+<body>
+<div class="canvas grain">
+  <div class="grid-mask"></div>
+  <div class="pad">
+    <div class="meta"><span class="dot"></span>Lorem · Ipsum · MMXXVI<span class="rule"></span>№ 001</div>
+  </div>
+  <div class="grid">
+    <div>
+      <h1>Lorem<br/>ipsum<em>dolor sit.</em></h1>
+      <p class="lede">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+    </div>
+    <div class="portrait">
+      <span class="corner c-tl"></span><span class="corner c-tr"></span>
+      <span class="corner c-bl"></span><span class="corner c-br"></span>
+      <div class="ph"><span>[ Hero Placeholder Image ]</span></div>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="logo">AngelLust</span>
+    <span class="badge">Vol · 01 — Lorem Ipsum</span>
+  </div>
+</div>
+</body>
+</html>

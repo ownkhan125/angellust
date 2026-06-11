@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AngelLust · Feed 07 · Numbered Priorities</title>
+<style>
+  :root{
+    --ink:#0b0c10; --surface:#14161e; --line:#2a2d38; --line-strong:#3a3e4d;
+    --cream:#f2eee5; --cream-dim:#cfcabe; --muted:#8b8e9a;
+    --gold:#e8b547; --clay:#c84630; --teal:#1f4e5f;
+    --serif:"EB Garamond","Times New Roman",Georgia,serif;
+    --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono","Geist Mono",ui-monospace,monospace;
+  }
+  html,body{margin:0;background:#16171c;display:grid;place-items:center;font-family:var(--sans)}
+  .canvas{width:1080px;height:1080px;position:relative;overflow:hidden;color:var(--cream);
+    background:
+      radial-gradient(800px 500px at 100% 0%, rgba(232,181,71,.08), transparent 60%),
+      var(--ink);
+  }
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .top{position:absolute;left:64px;right:64px;top:60px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+  .brand{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--cream);letter-spacing:0}
+  .head{position:absolute;left:64px;right:64px;top:130px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:block}
+  h1{font-family:var(--serif);font-weight:500;font-size:108px;line-height:.96;letter-spacing:-.02em;margin:0;color:var(--cream)}
+  h1 em{font-style:italic;color:var(--cream-dim)}
+  .list{position:absolute;left:64px;right:64px;top:420px;display:flex;flex-direction:column}
+  .row{display:grid;grid-template-columns:120px 1fr auto;align-items:center;gap:24px;padding:30px 0;border-top:1px solid var(--line)}
+  .row:last-child{border-bottom:1px solid var(--line)}
+  .num{font-family:var(--serif);font-style:italic;font-size:78px;line-height:1;color:var(--gold)}
+  .txt{display:flex;flex-direction:column;gap:6px}
+  .ttl{font-family:var(--serif);font-size:42px;line-height:1;color:var(--cream)}
+  .sub{font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+  .arrow{width:46px;height:46px;border:1px solid var(--line-strong);border-radius:999px;display:grid;place-items:center;color:var(--cream-dim);font-size:18px}
+  .footer{position:absolute;left:64px;right:64px;bottom:54px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="canvas grain">
+  <div class="top">
+    <span>Index · 07</span>
+    <span class="brand">AngelLust</span>
+    <span>Pp. vii</span>
+  </div>
+  <div class="head">
+    <span class="eyebrow">— Lorem Ipsum —</span>
+    <h1>Dolor sit amet,<br/><em>consectetur.</em></h1>
+  </div>
+  <div class="list">
+    <div class="row"><div class="num">01</div><div class="txt"><div class="ttl">Lorem ipsum dolor</div><div class="sub">Sit amet · Consectetur · MMXXVI</div></div><div class="arrow">→</div></div>
+    <div class="row"><div class="num">02</div><div class="txt"><div class="ttl">Adipiscing elit sed</div><div class="sub">Eiusmod · Tempor · Incididunt</div></div><div class="arrow">→</div></div>
+    <div class="row"><div class="num">03</div><div class="txt"><div class="ttl">Labore et dolore</div><div class="sub">Aliqua · Enim · Veniam</div></div><div class="arrow">→</div></div>
+    <div class="row"><div class="num">04</div><div class="txt"><div class="ttl">Quis nostrud exer.</div><div class="sub">Ullamco · Laboris · Nisi</div></div><div class="arrow">→</div></div>
+  </div>
+  <div class="footer">
+    <span>Lorem · Ipsum · 2026</span>
+    <span>Vol. I — Pag. vii</span>
+  </div>
+</div>
+</body>
+</html>

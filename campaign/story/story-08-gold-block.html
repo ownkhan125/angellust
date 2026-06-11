@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AngelLust · Story 08 · Gold Block</title>
+<style>
+  :root{
+    --ink:#0b0c10; --cream:#f2eee5; --cream-dim:#cfcabe;
+    --line:#2a2d38; --muted:#7a6520;
+    --gold:#e8b547; --gold-soft:#f3cf7a; --gold-deep:#a36f12;
+    --clay:#8d2c1c; --teal:#1f4e5f;
+    --serif:"EB Garamond","Times New Roman",Georgia,serif;
+    --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono","Geist Mono",ui-monospace,monospace;
+  }
+  html,body{margin:0;background:#16171c;display:grid;place-items:center;font-family:var(--sans)}
+  .canvas{width:1080px;height:1920px;position:relative;overflow:hidden;color:var(--ink);
+    background:
+      radial-gradient(80% 60% at 20% 0%, var(--gold-soft), transparent 60%),
+      radial-gradient(80% 70% at 100% 100%, var(--gold-deep), transparent 60%),
+      var(--gold);
+  }
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .top{position:absolute;left:64px;right:64px;top:96px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:13px;letter-spacing:.36em;text-transform:uppercase;color:rgba(11,12,16,.65)}
+  .brand{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--ink);letter-spacing:0}
+  .ink-block{position:absolute;left:64px;right:64px;top:240px;bottom:380px;background:linear-gradient(180deg,#0e0f14,#06070a);border-radius:20px;padding:74px 64px;color:var(--cream);overflow:hidden;box-shadow:0 60px 100px -30px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.05)}
+  .ink-block::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(80% 60% at 80% 0%, rgba(232,181,71,.18), transparent 60%),
+    radial-gradient(80% 60% at 0% 100%, rgba(31,78,95,.30), transparent 60%);pointer-events:none}
+  .eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:24px;display:flex;align-items:center;gap:14px}
+  .eyebrow .l{height:1px;width:60px;background:var(--gold)}
+  h1{font-family:var(--serif);font-weight:500;font-size:166px;line-height:.92;letter-spacing:-.025em;margin:0;color:var(--cream);position:relative;z-index:2}
+  h1 em{font-style:italic;color:var(--gold)}
+  .lede{position:relative;z-index:2;margin-top:42px;color:var(--cream-dim);font-size:23px;line-height:1.5;max-width:680px;border-left:1px solid rgba(255,255,255,.18);padding-left:22px}
+  .ribbon{position:absolute;left:0;right:0;bottom:0;padding:24px 64px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--cream-dim)}
+  .ribbon .num{font-family:var(--serif);font-style:italic;font-size:46px;color:var(--gold);line-height:1;letter-spacing:0;text-transform:none}
+  .gold-bottom{position:absolute;left:64px;right:64px;bottom:96px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end}
+  .gold-bottom .k{font-family:var(--mono);font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:rgba(11,12,16,.7)}
+  .gold-bottom .v{font-family:var(--serif);font-style:italic;font-size:54px;color:var(--ink);margin-top:6px;line-height:1}
+  .gold-bottom .ph{padding:14px 22px;border:1.5px solid rgba(11,12,16,.5);border-radius:6px;font-family:var(--mono);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:rgba(11,12,16,.7);background:rgba(255,255,255,.10);backdrop-filter:blur(2px)}
+</style>
+</head>
+<body>
+<div class="canvas grain">
+  <div class="top">
+    <span>Aurum · 08</span>
+    <span class="brand">AngelLust</span>
+  </div>
+  <div class="ink-block">
+    <span class="eyebrow"><span class="l"></span>Lorem ipsum dolor</span>
+    <h1>Sit amet,<br/><em>consectetur.</em></h1>
+    <p class="lede">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <div class="ribbon">
+      <span>Vol · viii · Lorem</span>
+      <span class="num">№ 08</span>
+    </div>
+  </div>
+  <div class="gold-bottom">
+    <div>
+      <div class="k">— Cap. viii · MMXXVI —</div>
+      <div class="v">Lorem ipsum dolor.</div>
+    </div>
+    <div class="ph">[ Placeholder Image ]</div>
+  </div>
+</div>
+</body>
+</html>

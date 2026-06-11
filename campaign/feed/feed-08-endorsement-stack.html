@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AngelLust · Feed 08 · Endorsement Stack</title>
+<style>
+  :root{
+    --ink:#0b0c10; --surface:#14161e; --line:#2a2d38; --line-strong:#3a3e4d;
+    --cream:#f2eee5; --cream-dim:#cfcabe; --muted:#8b8e9a;
+    --gold:#e8b547; --clay:#c84630; --teal:#1f4e5f;
+    --serif:"EB Garamond","Times New Roman",Georgia,serif;
+    --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono","Geist Mono",ui-monospace,monospace;
+  }
+  html,body{margin:0;background:#16171c;display:grid;place-items:center;font-family:var(--sans)}
+  .canvas{width:1080px;height:1080px;position:relative;overflow:hidden;color:var(--cream);
+    background:
+      radial-gradient(800px 600px at 30% 30%, rgba(31,78,95,.18), transparent 60%),
+      radial-gradient(800px 600px at 80% 80%, rgba(232,181,71,.10), transparent 60%),
+      linear-gradient(180deg,#0c0d12,#070809);
+  }
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .top{position:absolute;left:64px;right:64px;top:60px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+  .brand{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--cream);letter-spacing:0}
+  .head{position:absolute;left:64px;top:130px;max-width:520px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block}
+  h1{font-family:var(--serif);font-weight:500;font-size:90px;line-height:.96;letter-spacing:-.02em;margin:0;color:var(--cream)}
+  h1 em{font-style:italic;color:var(--gold)}
+  .head p{margin-top:24px;color:var(--cream-dim);font-size:15px;line-height:1.55;max-width:420px;border-left:1px solid var(--line-strong);padding-left:18px}
+  .stack{position:absolute;right:80px;top:200px;width:520px;height:620px}
+  .card{position:absolute;width:300px;height:380px;border-radius:8px;background:#f2eee5;box-shadow:0 30px 60px -20px rgba(0,0,0,.7), 0 2px 0 rgba(255,255,255,.06) inset;padding:18px;color:#1e1f25}
+  .card .ph{height:280px;border:1px dashed #aaa;background:repeating-linear-gradient(45deg,#ddd 0 8px,#d6d2c5 8px 16px);display:grid;place-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:#666;text-transform:uppercase;border-radius:2px}
+  .card .nm{margin-top:14px;font-family:var(--serif);font-style:italic;font-size:22px}
+  .card .role{font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#777;margin-top:4px}
+  .a{right:160px;top:0;transform:rotate(-6deg)}
+  .b{right:30px;top:80px;transform:rotate(4deg);background:#e8e3d6}
+  .c{right:240px;top:200px;transform:rotate(-2deg);background:#efeadd}
+  .tape{position:absolute;width:90px;height:24px;background:rgba(232,181,71,.5);left:50%;transform:translateX(-50%) rotate(-3deg);top:-10px;border-radius:1px;box-shadow:0 4px 10px rgba(0,0,0,.3)}
+  .footer{position:absolute;left:64px;right:64px;bottom:54px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+  .badge{padding:8px 14px;border:1px solid var(--gold);color:var(--gold);border-radius:999px}
+</style>
+</head>
+<body>
+<div class="canvas grain">
+  <div class="top">
+    <span>Album · 08</span>
+    <span class="brand">AngelLust</span>
+    <span>Lorem · Ipsum</span>
+  </div>
+  <div class="head">
+    <span class="eyebrow">— Verba Trium —</span>
+    <h1>Lorem ipsum<br/><em>dolor sit.</em></h1>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+  </div>
+  <div class="stack">
+    <div class="card a"><span class="tape"></span><div class="ph">[ Placeholder Image ]</div><div class="nm">Lorem Ipsum</div><div class="role">Dolor Sit Amet</div></div>
+    <div class="card c"><span class="tape"></span><div class="ph">[ Placeholder Image ]</div><div class="nm">Consectetur A.</div><div class="role">Adipiscing Elit</div></div>
+    <div class="card b"><span class="tape"></span><div class="ph">[ Placeholder Image ]</div><div class="nm">Tempor Inc.</div><div class="role">Eiusmod Labore</div></div>
+  </div>
+  <div class="footer">
+    <span>+ 12 Lorem Ipsum</span>
+    <span class="badge">Endorsed · MMXXVI</span>
+  </div>
+</div>
+</body>
+</html>
