@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AngelLust · Story 05 · Numbered Chapter</title>
+<style>
+  :root{
+    --ink:#0b0c10; --ink-2:#101218; --surface:#14161e; --line:#2a2d38; --line-strong:#3a3e4d;
+    --cream:#f2eee5; --cream-dim:#cfcabe; --muted:#8b8e9a;
+    --gold:#e8b547; --clay:#c84630; --teal:#1f4e5f;
+    --serif:"EB Garamond","Times New Roman",Georgia,serif;
+    --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono","Geist Mono",ui-monospace,monospace;
+  }
+  html,body{margin:0;background:#16171c;display:grid;place-items:center;font-family:var(--sans)}
+  .canvas{width:1080px;height:1920px;position:relative;overflow:hidden;color:var(--cream);
+    background:
+      radial-gradient(1100px 800px at 10% 0%, rgba(232,181,71,.10), transparent 60%),
+      radial-gradient(800px 700px at 90% 100%, rgba(31,78,95,.18), transparent 60%),
+      var(--ink);
+  }
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .pad{position:absolute;inset:96px 64px}
+  .head{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:13px;letter-spacing:.36em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:24px}
+  .brand{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--cream);letter-spacing:0}
+  .big-num{position:absolute;left:64px;right:64px;top:240px;display:grid;grid-template-columns:auto 1fr;align-items:end;gap:36px}
+  .big-num .n{font-family:var(--serif);font-weight:500;font-size:560px;line-height:.78;color:var(--cream);letter-spacing:-.06em}
+  .big-num .of{display:flex;flex-direction:column;align-items:flex-end;padding-bottom:90px}
+  .big-num .of span{font-family:var(--mono);font-size:12px;letter-spacing:.36em;text-transform:uppercase;color:var(--muted)}
+  .big-num .of strong{font-family:var(--serif);font-style:italic;font-size:120px;color:var(--gold);line-height:1;font-weight:500}
+  .split{position:absolute;left:64px;right:64px;top:920px;height:120px;display:flex;align-items:center;gap:24px}
+  .split .l{flex:1;height:1px;background:var(--line-strong)}
+  .split .chip{padding:10px 18px;border:1px solid var(--gold);color:var(--gold);font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;border-radius:999px}
+  .body{position:absolute;left:64px;right:64px;top:1080px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:block}
+  h1{font-family:var(--serif);font-weight:500;font-size:132px;line-height:.94;letter-spacing:-.02em;margin:0;color:var(--cream)}
+  h1 em{font-style:italic;color:var(--cream-dim)}
+  .lede{margin-top:34px;color:var(--cream-dim);font-size:21px;line-height:1.55;max-width:640px;border-left:1px solid var(--line-strong);padding-left:22px}
+  .ph{margin-top:50px;display:flex;align-items:center;gap:20px;padding:18px 22px;border:1px dashed var(--line-strong);border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,.03), transparent);font-family:var(--mono);font-size:12px;letter-spacing:.28em;color:var(--muted);text-transform:uppercase;max-width:560px}
+  .ph .sq{width:60px;height:60px;border-radius:6px;background:linear-gradient(160deg,#1a1d27,#0a0b10);border:1px solid var(--line-strong)}
+  .foot{position:absolute;left:64px;right:64px;bottom:96px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line);padding-top:22px}
+</style>
+</head>
+<body>
+<div class="canvas grain">
+  <div class="pad">
+    <div class="head">
+      <span>Caput · V</span>
+      <span class="brand">AngelLust</span>
+      <span>Pag. v</span>
+    </div>
+  </div>
+  <div class="big-num">
+    <span class="n">05</span>
+    <div class="of"><span>· of ·</span><strong>10</strong></div>
+  </div>
+  <div class="split">
+    <span class="l"></span>
+    <span class="chip">— Lorem · Ipsum —</span>
+    <span class="l"></span>
+  </div>
+  <div class="body">
+    <span class="eyebrow">— Capitulum Quintum —</span>
+    <h1>Lorem ipsum<br/><em>dolor sit.</em></h1>
+    <p class="lede">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    <div class="ph"><span class="sq"></span>[ Placeholder Image ]</div>
+  </div>
+  <div class="foot">
+    <span>Vol. I · MMXXVI</span>
+    <span>cap · v / x</span>
+  </div>
+</div>
+</body>
+</html>

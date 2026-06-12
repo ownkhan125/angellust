@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AngelLust · Feed 09 · Donation Orb</title>
+<style>
+  :root{
+    --ink:#0b0c10; --ink-2:#101218; --surface:#14161e; --line:#2a2d38; --line-strong:#3a3e4d;
+    --cream:#f2eee5; --cream-dim:#cfcabe; --muted:#8b8e9a;
+    --gold:#e8b547; --gold-soft:#f3cf7a; --clay:#c84630; --teal:#1f4e5f;
+    --serif:"EB Garamond","Times New Roman",Georgia,serif;
+    --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono","Geist Mono",ui-monospace,monospace;
+  }
+  html,body{margin:0;background:#16171c;display:grid;place-items:center;font-family:var(--sans)}
+  .canvas{width:1080px;height:1080px;position:relative;overflow:hidden;color:var(--cream);
+    background:
+      radial-gradient(800px 600px at 50% 50%, rgba(232,181,71,.18), transparent 60%),
+      radial-gradient(1100px 700px at 50% 100%, rgba(31,78,95,.20), transparent 60%),
+      linear-gradient(180deg,#0a0b10,#04050a);
+  }
+  .grid{position:absolute;inset:0;
+    background-image:linear-gradient(to right, rgba(255,255,255,.05) 1px, transparent 1px);
+    background-size:60px 100%;
+    -webkit-mask-image:radial-gradient(ellipse at center, black 30%, transparent 80%);
+            mask-image:radial-gradient(ellipse at center, black 30%, transparent 80%);}
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.6' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .top{position:absolute;left:64px;right:64px;top:60px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);z-index:5}
+  .brand{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--cream);letter-spacing:0}
+  .orb-wrap{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);display:grid;place-items:center;z-index:2}
+  .orb{width:540px;height:540px;border-radius:999px;position:relative;background:
+     radial-gradient(circle at 35% 30%, #fff8e0 0%, var(--gold-soft) 18%, var(--gold) 45%, #6f4d12 78%, #2a1c05 100%);
+    box-shadow:
+     0 0 200px 30px rgba(232,181,71,.35),
+     inset -40px -60px 100px rgba(0,0,0,.55),
+     inset 30px 30px 60px rgba(255,255,255,.25);}
+  .orb::before{content:"";position:absolute;left:18%;top:14%;width:32%;height:22%;border-radius:50%;background:radial-gradient(circle, rgba(255,255,255,.85), transparent 70%);filter:blur(8px)}
+  .orb::after{content:"";position:absolute;left:0;right:0;bottom:-180px;height:280px;background:radial-gradient(50% 100% at 50% 0%, rgba(232,181,71,.35), transparent 70%);filter:blur(40px)}
+  .panel{position:absolute;left:50%;bottom:140px;transform:translateX(-50%);width:680px;padding:30px 40px;border-radius:18px;
+     background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+     border:1px solid rgba(255,255,255,.14);
+     backdrop-filter:blur(20px) saturate(140%);
+     -webkit-backdrop-filter:blur(20px) saturate(140%);
+     box-shadow:0 30px 60px -20px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.10);
+     display:flex;align-items:center;justify-content:space-between;gap:24px;z-index:4}
+  .panel .l{display:flex;flex-direction:column}
+  .panel .k{font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+  .panel .v{font-family:var(--serif);font-style:italic;font-size:34px;color:var(--cream);margin-top:6px}
+  .panel .cta{padding:16px 26px;border-radius:999px;background:var(--cream);color:var(--ink);font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
+  .panel .cta i{display:inline-block;width:8px;height:8px;border-radius:999px;background:var(--gold)}
+  .head{position:absolute;left:64px;right:64px;top:160px;text-align:center;z-index:3}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block}
+  h1{font-family:var(--serif);font-weight:500;font-size:96px;line-height:.96;letter-spacing:-.02em;margin:0;color:var(--cream)}
+  h1 em{font-style:italic;color:var(--gold)}
+  .footer{position:absolute;left:64px;right:64px;bottom:54px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);z-index:5}
+  .ph{position:absolute;left:64px;bottom:140px;width:140px;height:90px;border:1px dashed var(--line-strong);border-radius:6px;display:grid;place-items:center;font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase;background:rgba(11,12,16,.4);z-index:5}
+</style>
+</head>
+<body>
+<div class="canvas grain">
+  <div class="grid"></div>
+  <div class="top">
+    <span>Donatio · 09</span>
+    <span class="brand">AngelLust</span>
+    <span>MMXXVI</span>
+  </div>
+  <div class="head">
+    <span class="eyebrow">— Lorem Ipsum —</span>
+    <h1>Dolor sit <em>amet.</em></h1>
+  </div>
+  <div class="orb-wrap"><div class="orb"></div></div>
+  <div class="ph">[ 3D Placeholder Object ]</div>
+  <div class="panel">
+    <div class="l">
+      <span class="k">Lorem ipsum</span>
+      <span class="v">Dolor sit amet · 00</span>
+    </div>
+    <span class="cta"><i></i>Lorem Ipsum</span>
+  </div>
+  <div class="footer">
+    <span>Lorem · Ipsum · Dolor</span>
+    <span>angellust / donare</span>
+  </div>
+</div>
+</body>
+</html>

@@ -35,7 +35,20 @@
       "Bash(npm ls *)",
       "Bash(xargs -0 sed -i \"s|@/lib/cn|@/lib/utils|g\")",
       "Bash(node run.js /tmp/playwright-codestyle-verify.js)",
-      "Bash(node run.js ' *)"
+      "Bash(node run.js ' *)",
+      "Bash(mkdir -p \"C:/Users/General/Documents/GitHub/AngelLust/public/campaign/feed\" \"C:/Users/General/Documents/GitHub/AngelLust/public/campaign/story\")",
+      "Bash(cp \"C:/Users/General/Documents/GitHub/AngelLust/campaign/feed/\"*.html \"C:/Users/General/Documents/GitHub/AngelLust/public/campaign/feed/\")",
+      "Bash(cp \"C:/Users/General/Documents/GitHub/AngelLust/campaign/story/\"*.html \"C:/Users/General/Documents/GitHub/AngelLust/public/campaign/story/\")",
+      "Bash(node -e \"require\\('./lib/helpers'\\).detectDevServers\\(\\).then\\(s => console.log\\(JSON.stringify\\(s\\)\\)\\)\")",
+      "Bash(netstat -ano)",
+      "Bash(powershell -Command 'Get-NetTCPConnection -LocalPort 3001 -State Listen 2>$null | Select-Object -ExpandProperty OwningProcess | Select-Object -First 1')",
+      "Bash(powershell -Command \"Get-Process -Id 22500 -ErrorAction SilentlyContinue | Select-Object Id,ProcessName,StartTime | Format-List\")",
+      "Bash(powershell *)",
+      "Bash(node run.js /tmp/playwright-social-posts.js)",
+      "Bash(cygpath -w /tmp/playwright-social-posts.js)",
+      "Bash(node run.js \"C:/Users/General/AppData/Local/Temp/pwtest/playwright-social-posts.js\")",
+      "Bash(node run.js \"C:/Users/General/AppData/Local/Temp/pwtest/playwright-verify-cards.js\")",
+      "Bash(node run.js \"C:/Users/General/AppData/Local/Temp/pwtest/playwright-verify-detail.js\")"
     ]
   }
 }

@@ -11,6 +11,7 @@ const links = [
   { label: 'Priorities', href: '/priorities' },
   { label: 'Endorsements', href: '/endorsements' },
   { label: 'Events', href: '/events' },
+  { label: 'Posts', href: '/social-media-posts' },
   { label: 'Volunteer', href: '/volunteer' },
   { label: 'Contact', href: '/contact' },
 ]

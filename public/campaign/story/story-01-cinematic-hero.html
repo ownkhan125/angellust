@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AngelLust · Story 01 · Cinematic Hero</title>
+<style>
+  :root{
+    --ink:#0b0c10; --ink-2:#101218; --surface:#14161e; --line:#2a2d38; --line-strong:#3a3e4d;
+    --cream:#f2eee5; --cream-dim:#cfcabe; --muted:#8b8e9a;
+    --gold:#e8b547; --gold-soft:#f3cf7a; --clay:#c84630; --teal:#1f4e5f;
+    --serif:"EB Garamond","Times New Roman",Georgia,serif;
+    --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono","Geist Mono",ui-monospace,monospace;
+  }
+  html,body{margin:0;background:#16171c;display:grid;place-items:center;font-family:var(--sans)}
+  .canvas{width:1080px;height:1920px;position:relative;overflow:hidden;color:var(--cream);
+    background:
+      radial-gradient(900px 700px at 50% 30%, rgba(31,78,95,.45), transparent 60%),
+      radial-gradient(900px 800px at 50% 90%, rgba(11,12,16,.8), transparent 60%),
+      linear-gradient(180deg,#0a0c11 0%,#040508 100%);
+  }
+  .photo{position:absolute;inset:0;background:
+     radial-gradient(60% 50% at 50% 35%, rgba(232,181,71,.25), transparent 60%),
+     radial-gradient(80% 60% at 50% 70%, rgba(200,70,48,.18), transparent 60%);
+     opacity:.7}
+  .photo .ph{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:740px;height:920px;border:1px dashed var(--line-strong);border-radius:6px;background:linear-gradient(180deg,#0f1117,#070809);display:grid;place-items:center;font-family:var(--mono);font-size:13px;letter-spacing:.28em;color:var(--muted);text-transform:uppercase}
+  .photo .ph span{padding:14px 22px;border:1px solid var(--line-strong);background:rgba(11,12,16,.5);border-radius:2px}
+  .gradient-down{position:absolute;inset:0;background:linear-gradient(180deg, transparent 30%, rgba(7,8,12,.95) 88%)}
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .top{position:absolute;left:64px;right:64px;top:90px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:13px;letter-spacing:.36em;text-transform:uppercase;color:var(--muted)}
+  .brand{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--cream);letter-spacing:0}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:999px;background:var(--gold);margin-right:14px;box-shadow:0 0 18px var(--gold)}
+  .body{position:absolute;left:64px;right:64px;bottom:280px;z-index:3}
+  .eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-bottom:24px;display:flex;align-items:center;gap:14px}
+  .eyebrow .l{height:1px;width:60px;background:var(--gold)}
+  h1{font-family:var(--serif);font-weight:500;font-size:178px;line-height:.92;letter-spacing:-.025em;margin:0;color:var(--cream)}
+  h1 em{font-style:italic;color:var(--gold);display:block}
+  .lede{margin-top:36px;color:var(--cream-dim);font-size:22px;line-height:1.5;max-width:600px;border-left:1px solid var(--line-strong);padding-left:24px}
+  .footer{position:absolute;left:64px;right:64px;bottom:120px;display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid var(--line);padding-top:24px;font-family:var(--mono);font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+  .num{font-family:var(--serif);font-style:italic;font-size:60px;color:var(--gold);line-height:1}
+</style>
+</head>
+<body>
+<div class="canvas grain">
+  <div class="photo"><div class="ph"><span>[ Hero Placeholder Image ]</span></div></div>
+  <div class="gradient-down"></div>
+  <div class="top">
+    <span><span class="dot"></span>Lorem · Ipsum · MMXXVI</span>
+    <span class="brand">AngelLust</span>
+  </div>
+  <div class="body">
+    <div class="eyebrow"><span class="l"></span>Prologus — I</div>
+    <h1>Lorem<br/>ipsum<em>dolor.</em></h1>
+    <p class="lede">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+  </div>
+  <div class="footer">
+    <span>Vol · I · Pag. 01</span>
+    <span class="num">№ 01</span>
+  </div>
+</div>
+</body>
+</html>

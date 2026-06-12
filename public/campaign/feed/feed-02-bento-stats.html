@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AngelLust · Feed 02 · Bento Statistics</title>
+<style>
+  :root{
+    --ink:#0b0c10; --ink-2:#101218; --surface:#14161e; --surface-2:#1a1d27;
+    --line:#2a2d38; --line-strong:#3a3e4d;
+    --cream:#f2eee5; --cream-dim:#cfcabe; --muted:#8b8e9a;
+    --gold:#e8b547; --gold-soft:#f3cf7a; --clay:#c84630; --teal:#1f4e5f; --teal-soft:#3a7f93;
+    --serif:"EB Garamond","Times New Roman",Georgia,serif;
+    --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono","Geist Mono",ui-monospace,monospace;
+  }
+  html,body{margin:0;background:#16171c;display:grid;place-items:center;font-family:var(--sans)}
+  .canvas{width:1080px;height:1080px;position:relative;overflow:hidden;background:var(--ink);color:var(--cream)}
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .glow{position:absolute;inset:0;background:
+    radial-gradient(380px 280px at 12% 0%, rgba(232,181,71,.20), transparent 70%),
+    radial-gradient(420px 320px at 100% 100%, rgba(31,78,95,.30), transparent 70%);}
+  .topbar{position:absolute;left:64px;right:64px;top:56px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+  .brand{font-family:var(--serif);font-style:italic;font-size:24px;color:var(--cream);letter-spacing:0}
+  .grid{position:absolute;left:64px;right:64px;top:130px;bottom:130px;display:grid;grid-template-columns:1.2fr .8fr;grid-template-rows:1fr 1fr;gap:18px}
+  .cell{position:relative;background:linear-gradient(160deg,var(--surface-2),var(--ink-2));border:1px solid var(--line);border-radius:18px;padding:38px 36px;overflow:hidden;backdrop-filter:blur(4px)}
+  .cell .label{font-family:var(--mono);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+  .cell .stat{font-family:var(--serif);font-weight:500;font-size:170px;line-height:.9;letter-spacing:-.03em;margin-top:18px;color:var(--cream)}
+  .cell.feature{grid-row:span 2;background:linear-gradient(155deg,#1a1d27 0%,#0d0f15 100%)}
+  .cell.feature .stat{font-size:240px}
+  .cell .desc{margin-top:18px;color:var(--cream-dim);font-size:14px;line-height:1.55;max-width:380px}
+  .cell .corner{position:absolute;top:22px;right:22px;font-family:var(--mono);font-size:11px;letter-spacing:.3em;color:var(--gold);text-transform:uppercase}
+  .cell.accent .stat{color:var(--gold)}
+  .cell.accent{border:1px solid rgba(232,181,71,.35);background:linear-gradient(155deg,#1a1614 0%,#100c0a 100%)}
+  .cell.accent::after{content:"";position:absolute;inset:0;background:radial-gradient(70% 60% at 80% 30%,rgba(232,181,71,.18),transparent 60%);pointer-events:none}
+  .ph-box{position:absolute;right:36px;bottom:32px;width:120px;height:80px;border:1px dashed var(--line-strong);border-radius:6px;display:grid;place-items:center;font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase;background:rgba(11,12,16,.45)}
+  .footer{position:absolute;left:64px;right:64px;bottom:48px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+  .pill{padding:8px 16px;border:1px solid var(--line-strong);border-radius:999px}
+  .gold-rule{height:2px;width:60px;background:var(--gold);margin-top:24px}
+</style>
+</head>
+<body>
+<div class="canvas grain">
+  <div class="glow"></div>
+  <div class="topbar">
+    <span>Lorem · Ipsum · Dolor</span>
+    <span class="brand">AngelLust</span>
+    <span>№ 002 / X</span>
+  </div>
+  <div class="grid">
+    <div class="cell feature">
+      <div class="label">Lorem Ipsum Index</div>
+      <div class="stat">240<span style="color:var(--gold)">+</span></div>
+      <div class="gold-rule"></div>
+      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="ph-box">[ Placeholder Image ]</div>
+    </div>
+    <div class="cell accent">
+      <span class="corner">↗ 01</span>
+      <div class="label">Dolor Sit Amet</div>
+      <div class="stat">30+</div>
+    </div>
+    <div class="cell">
+      <span class="corner">↗ 02</span>
+      <div class="label">Consectetur</div>
+      <div class="stat" style="color:var(--cream)">CD-1</div>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="pill">Lorem ipsum dolor sit amet</span>
+    <span>2026 · Lorem.Ipsum</span>
+  </div>
+</div>
+</body>
+</html>

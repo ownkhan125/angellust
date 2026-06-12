@@ -12,6 +12,7 @@ const columns = [
       { label: 'About', href: '/about' },
       { label: 'Priorities', href: '/priorities' },
       { label: 'Endorsements', href: '/endorsements' },
+      { label: 'Social Posts', href: '/social-media-posts' },
     ],
   },
   {

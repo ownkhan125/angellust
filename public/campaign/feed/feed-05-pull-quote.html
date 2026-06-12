@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AngelLust · Feed 05 · Pull Quote</title>
+<style>
+  :root{
+    --ink:#0b0c10; --ink-2:#101218; --surface:#14161e; --line:#2a2d38; --line-strong:#3a3e4d;
+    --cream:#f2eee5; --cream-dim:#cfcabe; --muted:#8b8e9a;
+    --gold:#e8b547; --gold-soft:#f3cf7a; --clay:#c84630; --teal:#1f4e5f;
+    --serif:"EB Garamond","Times New Roman",Georgia,serif;
+    --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono","Geist Mono",ui-monospace,monospace;
+  }
+  html,body{margin:0;background:#16171c;display:grid;place-items:center;font-family:var(--sans)}
+  .canvas{width:1080px;height:1080px;position:relative;overflow:hidden;color:var(--cream);
+    background:
+      radial-gradient(60% 60% at 50% 30%, rgba(31,78,95,.30), transparent 60%),
+      radial-gradient(80% 80% at 50% 100%, rgba(11,12,16,.6), transparent 60%),
+      linear-gradient(180deg,#0e1014,#070809);
+  }
+  .vignette{position:absolute;inset:0;background:radial-gradient(100% 100% at 50% 50%, transparent 50%, rgba(0,0,0,.65) 100%)}
+  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.08;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .top{position:absolute;left:64px;right:64px;top:60px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+  .brand{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--cream);letter-spacing:0}
+  .quote{position:absolute;left:120px;right:120px;top:50%;transform:translateY(-50%);text-align:center}
+  .qmark{font-family:var(--serif);font-size:240px;line-height:.6;color:var(--gold);font-style:italic;display:block;margin-bottom:-20px}
+  blockquote{margin:0;font-family:var(--serif);font-weight:500;font-size:78px;line-height:1.05;letter-spacing:-.018em;color:var(--cream)}
+  blockquote em{font-style:italic;color:var(--gold)}
+  .attr{margin-top:64px;display:inline-flex;align-items:center;gap:18px;font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--cream-dim)}
+  .ph-circle{width:62px;height:62px;border-radius:999px;border:1px dashed var(--line-strong);background:rgba(255,255,255,.03);display:grid;place-items:center;font-size:9px;letter-spacing:.2em;color:var(--muted)}
+  .rule{width:1px;height:34px;background:var(--line-strong)}
+  .who{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+  .who .name{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--cream);letter-spacing:0;text-transform:none}
+  .footer{position:absolute;left:64px;right:64px;bottom:54px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line);padding-top:22px}
+</style>
+</head>
+<body>
+<div class="canvas grain">
+  <div class="vignette"></div>
+  <div class="top">
+    <span>— Verbatim · 05 —</span>
+    <span class="brand">AngelLust</span>
+    <span>Lorem · Ipsum</span>
+  </div>
+  <div class="quote">
+    <span class="qmark">“</span>
+    <blockquote>Lorem ipsum dolor sit amet, <em>consectetur adipiscing</em> elit — sed do eiusmod tempor incididunt.</blockquote>
+    <div class="attr">
+      <div class="ph-circle">[ IMG ]</div>
+      <span class="rule"></span>
+      <div class="who">
+        <span class="name">Lorem Ipsum</span>
+        <span>Dolor Sit Amet</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Feature · V</span>
+    <span>angellust / lorem</span>
+  </div>
+</div>
+</body>
+</html>
